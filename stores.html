@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Go-Games stores</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="colorlib.com">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+<link rel="icon" href="resources/logoimagetiny.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|Baloo+Da|Cinzel|Lalezar|Oswald|Righteous&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <style>
+  .navbar {
+    margin-bottom: 5px;
+    border-radius: 0;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+     color: #ceddff;
+      border-width: 2px;
+  }
+
+  #bordershadow {
+  text-align:center;
+  border:100px solid #dd;
+  border-radius: 50px;
+  box-shadow: 10 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: all 200ms ease-out; /* NOTE: shadow transition  */
+  }
+
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    color: black;
+        background-color: rgb(34, 62, 126);
+    padding: 25px;
+      z-index: 53;
+  }
+
+  #searchbox {
+
+      border-color: rgb(0, 0, 0);
+
+      background-color: rgb(185, 224, 249);
+
+      z-index: 4;
+  }
+
+#shadowbox
+{
+-webkit-filter: drop-shadow(10px 10px 10px rgba(40, 50, 278, 10));
+filter: drop-shadow(10px 10px 10px rgba(40, 50, 278, 10));
+}
+
+
+#imageboxtext
+{
+font-size: 22px;
+font-family: "Roboto";
+  color: rgb(40, 40, 40);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -webkit-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -ms-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -webkit-filter: drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+  filter:drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+ transition: all 90ms ease-out;
+ z-index: 47;
+}
+
+#navbotton
+{
+font-size: 22px;
+font-family: 'Audiowide', cursive;;
+
+  color: rgb(40, 40, 40);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -webkit-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -ms-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+  -webkit-filter: drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+  filter:drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+ transition: all 90ms ease-out;
+ z-index: 47;
+}
+
+.project
+{
+position: left;
+background-color: rgb(34, 62, 126);
+}​
+
+#imageboxtext
+{
+background-color: rgb(185, 224, 249);
+box-shadow: 0px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+border-width: 8px;
+border-color: rgb(0, 0, 0);
+border-style: solid;
+background-color: rgb(34, 62, 126);
+z-index: 3;
+}
+
+#imageboxtext:hover
+{
+box-shadow: 5px 10px 30px  blue;
+padding: 0px;
+z-index: 2;
+}
+
+#navbotton
+{
+
+font-family: 'Audiowide', cursive;;
+color: white;
+background-color: rgb(185, 224, 249);
+box-shadow: 0px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+border-width: 16px;
+border-color: rgb(0, 0, 0);
+border-style: solid;
+background-color: rgb(34, 62, 126);
+
+position:center;
+border-radius: 505px;
+background-color: rgb(185, 224, 249);
+box-shadow: 10px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+border-width: 8px;
+border-color: rgb(0, 0, 0);
+border-style: solid;
+background-color: rgb(34, 62, 126);
+margin-left: 0.5em;
+z-index: 3;
+}
+
+#navbotton:hover
+{
+box-shadow: 5px 10px 30px  blue;
+padding: 20px;
+z-index: 2;
+}
+
+#myNavbar
+{
+
+
+
+
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+   height:100%;
+
+
+max-height: 500px;
+max-width:  500px;
+}
+
+
+  </style>
+</head>
+<body>
+
+
+
+    <!-- ---------------------------navegation bar------------------------------------ -->
+    <nav class="navbar navbar-inverse" style="background-color: rgb(34, 62, 126);" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <div  id="shadowbox"  class="panel-body"><img  onclick="location.href='games.html';"  src="resources/logoimage.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        </div>
+        <div    class="collapse navbar-collapse" id="myNavbar"><br>
+          <ul  class="nav navbar-nav"  >
+            <li   class="active"><a id="navbotton" href="games.html"
+
+
+              >Games</a></li>
+
+
+            <li> <a id="navbotton" href="consoles.html"
+
+            >Consoles</a></li>
+            <li><a id="navbotton" href="accesories.html"
+
+
+              >Accesories</a></li>
+            <li><a id="navbotton" href="stores.html"
+
+              >Stores</a></li>
+            <li><a id="navbotton" href="contacts.html"
+
+
+              >Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a style="color:white;" href="#"><span class="glyphicon glyphicon-user"  style="
+
+              color:#00FF42;
+              font-size: 30px;
+
+              "></span> Account</a></li>
+            <li><a style="color:white;
+
+              "   href="#"><span class="glyphicon glyphicon-shopping-cart"style="color:yellow;font-size: 30px;"></span> Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- content ------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Queens location</a></p>
+      <p><a href="#">Manhattan location</a></p>
+      <p><a href="#">Bronx location</a></p>
+     <p><a href="#">Brooklyn location</a></p>
+    </div>
+
+
+
+        <div class="col-sm-8">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Queens' location</div>
+            <div class="panel-body"><img src="resources/maplocation.png" class="img-responsive" style="width:100%" alt="Image"></div>
+
+          </div>
+        </div>
+
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+
+        <div class="panel-body"><img src="https://webcdn-adespressoinc.netdna-ssl.com/wp-content/uploads/2018/12/google-ads-recommendations-tool-1024x536.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+
+        <p>ADS</p>
+      </div>
+      <div class="well">
+
+        <div class="panel-body"><img src="https://images.techhive.com/images/article/2016/03/huluad-100649451-orig.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+
+
+
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
