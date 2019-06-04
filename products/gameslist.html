@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Go-games consoles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="colorlib.com">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+<link rel="icon" href="resources/logoimagetiny.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|Baloo+Da|Cinzel|Lalezar|Oswald|Righteous&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <style>
+
+      .navbar {
+        margin-bottom: 5px;
+        border-radius: 0;
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
+         color: #ceddff;
+          border-width: 2px;
+      }
+
+      #bordershadow {
+      text-align:center;
+      border:100px solid #dd;
+      border-radius: 50px;
+      box-shadow: 10 0 0 10px rgba(0, 0, 0, 0.15);
+      transition: all 200ms ease-out; /* NOTE: shadow transition  */
+      }
+
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        color: black;
+            background-color: rgb(34, 62, 126);
+        padding: 25px;
+          z-index: 53;
+      }
+
+      #searchbox {
+
+          border-color: rgb(0, 0, 0);
+
+          background-color: rgb(185, 224, 249);
+
+          z-index: 4;
+      }
+
+      #shadowbox
+      {
+       -webkit-filter: drop-shadow(10px 10px 10px rgba(40, 50, 278, 10));
+       filter: drop-shadow(10px 10px 10px rgba(40, 50, 278, 10));
+
+
+        }
+        #shadowbox1
+        {
+         -webkit-filter: drop-shadow(10px 10px 10px grey);
+         filter: drop-shadow(10px 10px 10px grey);
+
+
+          }
+
+
+  #imageboxtext
+   {
+    font-size: 22px;
+    font-family: "Roboto";
+      color: rgb(40, 40, 40);
+      line-height: 1.2;
+      text-align: left;
+      -moz-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -webkit-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -ms-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -webkit-filter: drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+      filter:drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+     transition: all 90ms ease-out;
+     z-index: 47;
+  }
+
+  #navbotton
+   {
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;;
+
+      color: rgb(40, 40, 40);
+      line-height: 1.2;
+      text-align: left;
+      -moz-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -webkit-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -ms-transform: matrix( 0.97030076227939, 0, 0, 0.8901439872734, 0, 0);
+      -webkit-filter: drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+      filter:drop-shadow(20px 20px 20px rgba(40, 50, 278, 10));
+     transition: all 90ms ease-out;
+     z-index: 47;
+  }
+
+  .project
+  {
+  position: left;
+  background-color: rgb(34, 62, 126);
+  }​
+
+  #imageboxtext
+  {
+  background-color: rgb(185, 224, 249);
+  box-shadow: 0px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+  border-width: 8px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(34, 62, 126);
+  z-index: 3;
+  }
+
+  #imageboxtext:hover
+  {
+  box-shadow: 5px 10px 30px  blue;
+  padding: 0px;
+  z-index: 2;
+  }
+
+  #navbotton
+  {
+
+    font-family: 'Audiowide', cursive;;
+  color: white;
+  background-color: rgb(185, 224, 249);
+  box-shadow: 0px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+  border-width: 16px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(34, 62, 126);
+
+  position:center;
+  border-radius: 505px;
+  background-color: rgb(185, 224, 249);
+  box-shadow: 10px 4px 6.4px 1.6px rgba(0, 0, 0, 0.35);
+  border-width: 8px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(34, 62, 126);
+   margin-left: 0.5em;
+  z-index: 3;
+  }
+
+  #navbotton:hover
+  {
+  box-shadow: 5px 10px 30px  blue;
+  padding: 20px;
+  z-index: 2;
+  }
+
+  #myNavbar
+  {
+
+
+
+
+  }
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+       height:100%;
+
+
+  max-height: 500px;
+  max-width:  500px;
+  }
+
+
+
+
+  </style>
+</head>
+<body>
+</div>
+
+
+  <!-- ---------------------------navegation bar------------------------------------ -->
+  <nav class="navbar navbar-inverse" style="background-color: rgb(34, 62, 126);" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div  id="shadowbox"  class="panel-body"><img  onclick="location.href='../games.html';"  src="../resources/logoimage.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      </div>
+      <div    class="collapse navbar-collapse" id="myNavbar"><br>
+        <ul  class="nav navbar-nav"  >
+          <li   class="active"><a id="navbotton" href="../games.html"
+
+
+            >Games</a></li>
+
+
+          <li> <a id="navbotton" href="../consoles.html"
+
+          >Consoles</a></li>
+          <li><a id="navbotton" href="../accesories.html"
+
+
+            >Accesories</a></li>
+          <li><a id="navbotton" href="../stores.html"
+
+            >Stores</a></li>
+          <li><a id="navbotton" href="../contacts.html"
+
+
+            >Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="color:white;" href="#"><span class="glyphicon glyphicon-user"  style="
+
+            color:#00FF42;
+            font-size: 30px;
+
+            "></span> Account</a></li>
+          <li><a style="color:white;
+
+            "   href="#"><span class="glyphicon glyphicon-shopping-cart"style="color:yellow;font-size: 30px;"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- content ------------------------------------------------------------------------------------------------ -->
+
+
+  <!-- product starts  -->
+  <div class="col-sm-3">
+     <h4>Call of Duty: Modern Warfare</h4>
+     <img id="shadowbox1"  src="https://www.gamestop.com/common/images/lbox/199558brp.jpg"    alt="Avatar">
+   </div>
+                 <div class="row">
+
+                     <div class="col-sm-7">
+                         <div class="well">
+
+                             <div class="product new_product">
+
+                                 <div class="product_info grid_12">
+                                     <h3 class="ats-product-title" role="heading" aria-level="2"><a  class="ats-product-title-lnk" href="products/callofduty.html">Call of Duty: Modern Warfare</a> for  <strong>Xbox One</strong></h3>
+                                     <div class="NotRated">
+                                         <div>Not Rated</div>
+                                     </div>
+
+                                     <div class="extras ats-product-extras">
+                                         <p class="bonus ats-product-bonus"><strong>BONUS</strong>Includes GameStop bonus!</p>
+
+                                     </div>
+                                     <img class="product_esrb ats-product-esrb ae-img" src="/common/gui/esrb_search_rp.gif" alt="Rating Pending. Not yet assigned a final ESRB rating.">
+                                     <ul class="ats-product-infoList">
+                                         <li>Release Date 10/25/2019</a>
+                                             <br>
+                                         </li>
+
+                                         <li class="ats-product-infoItem"><span aria-hidden="true" role="presentation">Eligible for Pick Up At Store. </span><a>More info.</span> <span style="display:none" class="ae-compliance-indent ae-reader-visible"> Eligible for Pick Up At Store.  </span> </a></li>
+
+                                         <li class="ats-product-infoItem">Billing does not occur until shipment is processed.
+                                             <br>
+                                             <span aria-hidden="true" role="presentation"> </span> <a>Pre-order low price guarantee.  </span> </a >
+
+                                        </li>
+
+                                    </ul>
+
+                        </div>
+                        <div class="purchase_info grid_6 omega">
+                          <h4 class="ats-product-condition" role="presentation">BUY <strong>NEW</strong></h4>
+                          <p class="pricing ats-product-price">$59.99</p>
+
+                          <input style=" background-color: green; " id="navbotton1" type="submit"  value="Add to Cart" data-add="search" aria-label="Add to Cart" data-ae-blurbtype="button" data-ae-form-field="true">
+
+                 </div>
+                </div>
+                 </div>
+                 </div>
+
+                </div>
+
+   <!-- end product  -->
+
+
+
+     <!-- product starts  -->
+     <div class="col-sm-3">
+        <h4>Call of Duty: Modern Warfare</h4>
+        <img id="shadowbox1"  src="https://www.gamestop.com/common/images/lbox/199558brp.jpg"    alt="Avatar">
+      </div>
+                    <div class="row">
+
+                        <div class="col-sm-7">
+                            <div class="well">
+
+                                <div class="product new_product">
+
+                                    <div class="product_info grid_12">
+                                        <h3 class="ats-product-title" role="heading" aria-level="2"><a  class="ats-product-title-lnk" href="products/callofduty.html">Call of Duty: Modern Warfare</a> for  <strong>Xbox One</strong></h3>
+                                        <div class="NotRated">
+                                            <div>Not Rated</div>
+                                        </div>
+
+                                        <div class="extras ats-product-extras">
+                                            <p class="bonus ats-product-bonus"><strong>BONUS</strong>Includes GameStop bonus!</p>
+
+                                        </div>
+                                        <img class="product_esrb ats-product-esrb ae-img" src="/common/gui/esrb_search_rp.gif" alt="Rating Pending. Not yet assigned a final ESRB rating.">
+                                        <ul class="ats-product-infoList">
+                                            <li>Release Date 10/25/2019</a>
+                                                <br>
+                                            </li>
+
+                                            <li class="ats-product-infoItem"><span aria-hidden="true" role="presentation">Eligible for Pick Up At Store. </span><a>More info.</span> <span style="display:none" class="ae-compliance-indent ae-reader-visible"> Eligible for Pick Up At Store.  </span> </a></li>
+
+                                            <li class="ats-product-infoItem">Billing does not occur until shipment is processed.
+                                                <br>
+                                                <span aria-hidden="true" role="presentation"> </span> <a>Pre-order low price guarantee.  </span> </a >
+
+                                           </li>
+
+                                       </ul>
+
+                           </div>
+                           <div class="purchase_info grid_6 omega">
+                             <h4 class="ats-product-condition" role="presentation">BUY <strong>NEW</strong></h4>
+                             <p class="pricing ats-product-price">$59.99</p>
+
+                             <input style=" background-color: green; " id="navbotton1" type="submit"  value="Add to Cart" data-add="search" aria-label="Add to Cart" data-ae-blurbtype="button" data-ae-form-field="true">
+
+                    </div>
+                   </div>
+                    </div>
+                    </div>
+
+                   </div>
+
+      <!-- end product  -->
+
+        <!-- product starts  -->
+        <div class="col-sm-3">
+           <h4>Call of Duty: Modern Warfare</h4>
+           <img id="shadowbox1"  src="https://www.gamestop.com/common/images/lbox/199558brp.jpg"    alt="Avatar">
+         </div>
+                       <div class="row">
+
+                           <div class="col-sm-7">
+                               <div class="well">
+
+                                   <div class="product new_product">
+
+                                       <div class="product_info grid_12">
+                                           <h3 class="ats-product-title" role="heading" aria-level="2"><a  class="ats-product-title-lnk" href="products/callofduty.html">Call of Duty: Modern Warfare</a> for  <strong>Xbox One</strong></h3>
+                                           <div class="NotRated">
+                                               <div>Not Rated</div>
+                                           </div>
+
+                                           <div class="extras ats-product-extras">
+                                               <p class="bonus ats-product-bonus"><strong>BONUS</strong>Includes GameStop bonus!</p>
+
+                                           </div>
+                                           <img class="product_esrb ats-product-esrb ae-img" src="/common/gui/esrb_search_rp.gif" alt="Rating Pending. Not yet assigned a final ESRB rating.">
+                                           <ul class="ats-product-infoList">
+                                               <li>Release Date 10/25/2019</a>
+                                                   <br>
+                                               </li>
+
+                                               <li class="ats-product-infoItem"><span aria-hidden="true" role="presentation">Eligible for Pick Up At Store. </span><a>More info.</span> <span style="display:none" class="ae-compliance-indent ae-reader-visible"> Eligible for Pick Up At Store.  </span> </a></li>
+
+                                               <li class="ats-product-infoItem">Billing does not occur until shipment is processed.
+                                                   <br>
+                                                   <span aria-hidden="true" role="presentation"> </span> <a>Pre-order low price guarantee.  </span> </a >
+
+                                              </li>
+
+                                          </ul>
+
+                              </div>
+                              <div class="purchase_info grid_6 omega">
+                                <h4 class="ats-product-condition" role="presentation">BUY <strong>NEW</strong></h4>
+                                <p class="pricing ats-product-price">$59.99</p>
+
+                                <input style=" background-color: green; " id="navbotton1" type="submit"  value="Add to Cart" data-add="search" aria-label="Add to Cart" data-ae-blurbtype="button" data-ae-form-field="true">
+
+                       </div>
+                      </div>
+                       </div>
+                       </div>
+
+                      </div>
+
+         <!-- end product  -->
+
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <p>Go-Games Text</p>
+</footer>
+
+</body>
+</html>
